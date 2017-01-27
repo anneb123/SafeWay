@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Angular QuickStart</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+
+    <link rel="stylesheet" href="http://js.api.here.com/v3/3.0/mapsjs-ui.css" />
+
+    <script src="http://js.api.here.com/v3/3.0/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://js.api.here.com/v3/3.0/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://js.api.here.com/v3/3.0/mapsjs-ui.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://js.api.here.com/v3/3.0/mapsjs-mapevents.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://js.api.here.com/v3/3.0/mapsjs-pano.js" type="text/javascript" charset="utf-8"></script>
+
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+
+    <style type="text/css">
+      .log {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        height: 150px;
+        width: 250px;
+        overflow: scroll;
+        background: white;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 12px;
+      }
+      .log-entry {
+        padding: 5px;
+        border-bottom: 1px solid #d0d9e9;
+      }
+      .log-entry:nth-child(odd) {
+        background-color: #e1e7f1;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <my-app>Loading AppComponent content here ...</my-app>
+
+  </body>
+</html>
